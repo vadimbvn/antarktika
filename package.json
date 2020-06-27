@@ -1,0 +1,20 @@
+{
+  "name": "antarktika",
+  "version": "1.0.0",
+  "description": "Antarktika",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "eslint": "^7.3.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "build": "gulp css",
+    "start": "gulp start"
+  }
+}
