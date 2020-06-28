@@ -1,0 +1,41 @@
+.reservation {
+  margin-top: 120px;
+}
+
+.reservation__bg {
+  height: 555px;
+  background-image: url("../img/reservation-bg-desktop@1x.jpg");
+  background-size: 1366px 555px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: $grey;
+}
+
+.reservation__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation h2 {
+  margin: 0;
+  padding-top: 230px;
+  padding-left: 45px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+.reservation p {
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 45px;
+  width: 390px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+
+.reservation__form {
+  width: 403px;
+  background-color: $main-color;
+}

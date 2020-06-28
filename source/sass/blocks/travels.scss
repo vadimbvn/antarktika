@@ -1,0 +1,90 @@
+.travels {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.travels__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travels__info {
+  margin-top: 50px;
+}
+
+.travels__info h2 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.travels__info p {
+  margin: 0;
+  padding-top: 35px;
+  width: 515px;
+  line-height: 24px;
+}
+
+.travels__image img {
+  display: block;
+  width: 560px;
+  height: 301px;
+}
+
+@media (max-width: $tablet-width) {
+  .travels {
+    margin-top: 100px;
+  }
+
+  .travels__info {
+  margin: 0;
+}
+
+  .travels__info h2 {
+    width: 210px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .travels__info p {
+    padding-top: 30px;
+    width: 350px;
+  }
+
+  .travels__image img {
+    width: 324px;
+    height: 264px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .travels {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    padding-left: 19px;
+  }
+
+  .travels__wrapper {
+    flex-direction: column;
+  }
+
+  .travels__info h2 {
+    width: 190px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .travels__info p {
+    width: 290px;
+  }
+
+  .travels__image {
+    margin-top: 40px;
+  }
+
+  .travels__image img {
+    width: 290px;
+    height: 186px;
+  }
+}
