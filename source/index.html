@@ -345,7 +345,7 @@
           <div class="reservation__wrapper container">
             <div class="reservation__info">
               <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+              <p>Забронируйте тур за 3-6 месяцев <br>до даты выезда и сэкономьте до 50%</p>
             </div>
             <div class="reservation__block">
               <form class="reservation__form form">
@@ -353,31 +353,49 @@
                   <legend>Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
                   <ul class="form__list">
                     <li>
-                      <label class="form__label"></label>
-                      <input type="text" name="username">
+                      <label class="visually-hidden" for="user-name">Имя пользователя</label>
+                      <input class="form__input" type="text" name="username" id="user-name" placeholder="Валерия">
                     </li>
                     <li>
-                      <label class="form__label"></label>
-                      <input type="tel" name="">
+                      <label class="visually-hidden" for="user-phone">Номер пользователя</label>
+                      <input class="form__input" type="tel" name="userphone" id="user-phone" placeholder="89236889975">
                     </li>
                     <li>
-                      <label class="form__label"></label>
-                      <input type="email" name="">
+                      <label class="visually-hidden" for="user-mail">Email пользователя</label>
+                      <input class="form__input" type="email" name="usermail" id="user-mail" placeholder="grishaewa.lera@gmail.com">
                     </li>
                   </ul>
                 </fieldset>
+                <fieldset class="form__group">
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="useragree" id="user-agree" checked>
+                  <label class="form__custom-checkbox" for="user-agree">Я согласен на обработку моих <span>персональных данных</span></label>
+                </fieldset>
+                <a class="form__button button button--form" href="#">Оставить заявку</a>
               </form>
           </div>
         </div>
       </section>
       <section class="contacts">
-        <div class="container">
+        <div class="contacts__wrapper container">
           <h2 class="visually-hidden">Контактная информация</h2>
+          <div class="contacts__map">
+            <a href="#">
+              <picture>
+                <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x">
+                <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x">
+                <img src="img/map-desktop@1x.png" alt="">
+              </picture>
+            </a>
+          </div>
           <div class="contacts__info">
             <h3>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</h3>
             <ul class="contacts__list">
-              <li class="contacts__item contacts__item--adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</li>
-              <li class="contacts__item contacts__item--phone">8-800-200-00-00</li>
+              <li class="contacts__item contacts__item--adress">
+                <p>г. Санкт Петербург, <br>ул. Большая Конюшенная, 19/8</p>
+              </li>
+              <li class="contacts__item contacts__item--phone">
+                <a href="tel:8-800-200-00-00">8-800-200-00-00</a>
+              </li>
             </ul>
           </div>
         </div>

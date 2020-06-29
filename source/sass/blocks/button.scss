@@ -9,16 +9,31 @@
   line-height: 21px;
   background-color: $text-color;
   color: $main-color;
+
+  &--form {
+    width: 303px;
+    height: 43px;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .button {
     width: 239px;
+
+    &--form {
+      width: 303px;
+      height: 43px;
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .button {
     width: 220px;
+
+    &--form {
+      width: 230px;
+      height: 43px;
+    }
   }
 }

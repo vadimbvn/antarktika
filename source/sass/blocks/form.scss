@@ -1,0 +1,94 @@
+.form {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form legend {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: $text-color;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__input {
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 303px;
+  height: 43px;
+  font-size: 14px;
+  background-color: $text-color;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: $main-color;
+}
+
+.form__custom-checkbox {
+  position: relative;
+  padding-left: 25px;
+  font-size: 10px;
+  line-height: 13px;
+  color: $text-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -3px;
+    left: 0;
+    background-color: $text-color;
+  }
+}
+
+.form__checkbox:checked + .form__custom-checkbox::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__button {
+  margin-top: 30px;
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+  .form legend {
+    width: 215px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .form__input {
+    width: 230px;
+  }
+
+  .form__custom-checkbox span {
+    padding-left: 25px
+  }
+
+  .form__button {
+    margin-top: 20px;
+  }
+}
