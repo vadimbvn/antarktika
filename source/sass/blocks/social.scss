@@ -59,6 +59,15 @@
     background-repeat: no-repeat
   }
 }
+.social__item a {
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
 
 @media (max-width: $tablet-width) {
   .social {

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
+  <script src="js/main.js"></script>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper container">
@@ -15,7 +16,7 @@
             <img src="img/logo.svg" width="70" height="38" alt="Логотип сайта Круизы по Антарктике">
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__site-list">
             <li class="main-nav__site-item">
@@ -49,9 +50,12 @@
             </div>
             <div class="travels__image">
               <picture>
-                <source media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.jpg 1x">
-                <source media="(max-width: 767px)" srcset="img/penguins-mobile@1x.jpg 1x">
-                <img src="img/penguins-desktop@1x.jpg" alt="Фотография с пингвинами">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/penguins-mobile@1x.jpg 1x, img/penguins-mobile@2x.jpg 2x">
+                <img src="img/penguins-desktop@1x.jpg" srcset="img/penguins-desktop@2x.jpg 2x" alt="Фотография с пингвинами">
               </picture>
             </div>
         </div>
@@ -84,9 +88,12 @@
             <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-astoria-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-astoria-mobile@1x.jpg 1x">
-                  <img src="img/photo-astoria-desktop@1x.jpg" alt="Фотография круиза Астория">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-astoria-tablet@1x.webp 1x, img/photo-astoria-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-astoria-mobile@1x.webp 1x, img/photo-astoria-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-astoria-desktop@1x.webp 1x, img/photo-astoria-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-astoria-tablet@1x.jpg 1x, img/photo-astoria-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-astoria-mobile@1x.jpg 1x, img/photo-astoria-mobile@2x.jpg 2x">
+                  <img src="img/photo-astoria-desktop@1x.jpg" srcset="img/photo-astoria-desktop@2x.jpg 2x" alt="Фотография круиза Астория">
                 </picture>
               </a>
               <span>Круиз "Астория"</span>
@@ -116,9 +123,12 @@
             <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-astoria-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-astoria-mobile@1x.jpg 1x">
-                  <img src="img/photo-astoria-desktop@1x.jpg" alt="Фотография круиза Элайн">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-astoria-tablet@1x.webp 1x, img/photo-astoria-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-astoria-mobile@1x.webp 1x, img/photo-astoria-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-astoria-desktop@1x.webp 1x, img/photo-astoria-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-astoria-tablet@1x.jpg 1x, img/photo-astoria-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-astoria-mobile@1x.jpg 1x, img/photo-astoria-mobile@2x.jpg 2x">
+                  <img src="img/photo-astoria-desktop@1x.jpg" srcset="img/photo-astoria-desktop@2x.jpg 2x" alt="Фотография круиза Элайн">
                 </picture>
               </a>
               <span>Круиз "Элайн"</span>
@@ -148,9 +158,12 @@
             <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-atlantis-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-atlantis-mobile@1x.jpg 1x">
-                  <img src="img/photo-atlantis-desktop@1x.jpg" alt="Фотография круиза Атлантис">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-atlantis-tablet@1x.webp 1x, img/photo-atlantis-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-atlantis-mobile@1x.webp 1x, img/photo-atlantis-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-atlantis-desktop@1x.webp 1x, img/photo-atlantis-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-atlantis-tablet@1x.jpg 1x, img/photo-atlantis-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-atlantis-mobile@1x.jpg 1x, img/photo-atlantis-mobile@2x.jpg 2x">
+                  <img src="img/photo-atlantis-desktop@1x.jpg" srcset="img/photo-atlantis-desktop@2x.jpg 2x" alt="Фотография круиза Атлантис">
                 </picture>
               </a>
               <span>Круиз "Атлантис"</span>
@@ -180,9 +193,12 @@
             <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-odysseus-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-odysseus-mobile@1x.jpg 1x">
-                  <img src="img/photo-odysseus-desktop@1x.jpg" alt="Фотография круиза Одиссей">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-odysseus-tablet@1x.webp 1x, img/photo-odysseus-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-odysseus-mobile@1x.webp 1x, img/photo-odysseus-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-odysseus-desktop@1x.webp 1x, img/photo-odysseus-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-odysseus-tablet@1x.jpg 1x, img/photo-odysseus-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-odysseus-mobile@1x.jpg 1x, img/photo-odysseus-mobile@2x.jpg 2x">
+                  <img src="img/photo-odysseus-desktop@1x.jpg" srcset="img/photo-odysseus-desktop@2x.jpg 2x" alt="Фотография круиза Одиссей">
                 </picture>
               </a>
               <span>Круиз "Одиссей"</span>
@@ -212,9 +228,12 @@
             <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-olimpia-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-olimpia-mobile@1x.jpg 1x">
-                  <img src="img/photo-olimpia-desktop@1x.jpg" alt="Фотография круиза Олимпия">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-olimpia-tablet@1x.webp 1x, img/photo-olimpia-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-olimpia-mobile@1x.webp 1x, img/photo-olimpia-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-olimpia-desktop@1x.webp 1x, img/photo-olimpia-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-olimpia-tablet@1x.jpg 1x, img/photo-olimpia-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-olimpia-mobile@1x.jpg 1x, img/photo-olimpia-mobile@2x.jpg 2x">
+                  <img src="img/photo-olimpia-desktop@1x.jpg" srcset="img/photo-olimpia-desktop@2x.jpg 2x" alt="Фотография круиза Олимпия">
                 </picture>
               </a>
               <span>Круиз "Олимпия"</span>
@@ -244,9 +263,12 @@
             <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-avrora-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-avrora-mobile@1x.jpg 1x">
-                  <img src="img/photo-avrora-desktop@1x.jpg" alt="Фотография круиза Аврора">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-avrora-tablet@1x.webp 1x, img/photo-avrora-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-avrora-mobile@1x.webp 1x, img/photo-avrora-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-avrora-desktop@1x.webp 1x, img/photo-avrora-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-avrora-tablet@1x.jpg 1x, img/photo-avrora-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-avrora-mobile@1x.jpg 1x, img/photo-avrora-mobile@2x.jpg 2x">
+                  <img src="img/photo-avrora-desktop@1x.jpg" srcset="img/photo-avrora-desktop@2x.jpg 2x" alt="Фотография круиза Аврора">
                 </picture>
               </a>
               <span>Круиз "Аврора"</span>
@@ -276,9 +298,12 @@
             <li class="cruises__item">
               <a href="#">
                  <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-leonor-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-leonor-mobile@1x.jpg 1x">
-                  <img src="img/photo-leonor-desktop@1x.jpg" alt="Фотография круиза Леонор">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-leonor-tablet@1x.webp 1x, img/photo-leonor-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-leonor-mobile@1x.webp 1x, img/photo-leonor-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-leonor-desktop@1x.webp 1x, img/photo-leonor-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-leonor-tablet@1x.jpg 1x, img/photo-leonor-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-leonor-mobile@1x.jpg 1x, img/photo-leonor-mobile@2x.jpg 2x">
+                  <img src="img/photo-leonor-desktop@1x.jpg" srcset="img/photo-leonor-desktop@2x.jpg 2x" alt="Фотография круиза Леонор">
                 </picture>
               </a>
               <span>Круиз "Леонор"</span>
@@ -308,9 +333,12 @@
              <li class="cruises__item">
               <a href="#">
                 <picture>
-                  <source media="(max-width: 1023px)" srcset="img/photo-minion-tablet@1x.jpg 1x">
-                  <source media="(max-width: 767px)" srcset="img/photo-minion-mobile@1x.jpg 1x">
-                  <img src="img/photo-minion-desktop@1x.jpg" alt="Фотография круиза Минион">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/photo-minion-tablet@1x.webp 1x, img/photo-minion-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-minion-mobile@1x.webp 1x, img/photo-minion-mobile@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-minion-desktop@1x.webp 1x, img/photo-minion-desktop@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="img/photo-minion-tablet@1x.jpg 1x, img/photo-minion-tablet@2x.jpg 2x">
+                  <source media="(max-width: 767px)" srcset="img/photo-minion-mobile@1x.jpg 1x, img/photo-minion-mobile@2x.jpg 2x">
+                  <img src="img/photo-minion-desktop@1x.jpg" srcset="img/photo-minion-desktop@2x.jpg 2x" alt="Фотография круиза Минион">
                 </picture>
               </a>
               <span>Круиз "Минион-1"</span>
@@ -381,9 +409,12 @@
           <div class="contacts__map">
             <a href="#">
               <picture>
-                <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x">
-                <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x">
-                <img src="img/map-desktop@1x.png" alt="">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.jpg 2x">
+                <img src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.jpg 2x" alt="Карта с местоположением">
               </picture>
             </a>
           </div>

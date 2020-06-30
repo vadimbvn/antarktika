@@ -9,6 +9,10 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-color: $grey;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/reservation-bg-desktop@2x.jpg");
+  }
 }
 
 .reservation__wrapper {
@@ -53,6 +57,10 @@
     height: 805px;
     background-image: url("../img/reservation-bg-tablet@1x.jpg");
     background-size: 768px 805px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/reservation-bg-tablet@2x.jpg");
+    }
   }
 
   .reservation__wrapper {
@@ -90,6 +98,10 @@
     height: 760px;
     background-image: url("../img/reservation-bg-mobile@1x.jpg");
     background-size: 320px 760px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/reservation-bg-mobile@2x.jpg");
+    }
   }
 
   .reservation__info h2 {

@@ -17,6 +17,16 @@
   color: $text-color;
 }
 
+.navigation__item a[href] {
+  &:hover {
+    color: $dark-grey;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .navigation {
     margin-top: 2px;
@@ -43,5 +53,6 @@
 
   .navigation__item {
     padding-bottom: 23px;
+    width: 190px;
   }
 }

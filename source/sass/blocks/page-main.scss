@@ -5,6 +5,11 @@
   background-size: 1366px 650px;
   background-position: top center;
   background-repeat: no-repeat;
+  background-color: $grey;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/antartika-bg-desktop@2x.jpg");
+  }
 }
 
 .page-main__bg h1 {
@@ -29,8 +34,12 @@
 @media (max-width: $tablet-width) {
   .page-main__bg {
     height: 638px;
-    background-image: url("../img/antarktika-bg-tablet@1x.jpg");
+    background-image: url("../img/antartika-bg-tablet@1x.jpg");
     background-size: 768px 638px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/antartika-bg-tablet@2x.jpg");
+    }
   }
 
   .page-main__bg h1 {
@@ -51,12 +60,16 @@
   .page-main__bg {
     margin-top: -82px;
     height: 500px;
-    background-image: url("../img/antarktika-bg-mobile@1x.jpg");
+    background-image: url("../img/antartika-bg-mobile@1x.jpg");
     background-size: 320px 500px;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/antartika-bg-mobile@2x.jpg");
+    }
   }
 
   .page-main__bg h1 {
-    padding: 0;
+    margin: 0;
     padding-top: 165px;
     padding-left: 19px;
     font-size: 36px;
