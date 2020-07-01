@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.page-header__logo-open {
+  display: none;
+}
+
 .page-header__logo img {
   display: block;
   width: 70px;
@@ -47,5 +51,9 @@
 .page-header__logo img {
     width: 42px;
     height: 22px;
+  }
+
+  .page-header__logo-open {
+    display: block;
   }
 }

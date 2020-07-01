@@ -6,14 +6,23 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/montserrat.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserratbold.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
-  <script src="js/main.js"></script>
   <body>
     <header class="page-header">
       <div class="page-header__wrapper container">
         <div class="page-header__wrapper-logo">
           <a class="page-header__logo">
-            <img src="img/logo.svg" width="70" height="38" alt="Логотип сайта Круизы по Антарктике">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="img/logo-tablet.svg">
+              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
+              <img src="img/logo-desktop.svg" width="70" height="38" alt="Логотип сайта Круизы по Антарктике">
+            </picture>
           </a>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -376,7 +385,7 @@
               <p>Забронируйте тур за 3-6 месяцев <br>до даты выезда и сэкономьте до 50%</p>
             </div>
             <div class="reservation__block">
-              <form class="reservation__form form">
+              <form class="reservation__form form" method="post">
                 <fieldset class="form__group">
                   <legend>Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
                   <ul class="form__list">
@@ -398,7 +407,7 @@
                   <input class="form__checkbox visually-hidden" type="checkbox" name="useragree" id="user-agree" checked>
                   <label class="form__custom-checkbox" for="user-agree">Я согласен на обработку моих <span>персональных данных</span></label>
                 </fieldset>
-                <a class="form__button button button--form" href="#">Оставить заявку</a>
+                <button class="form__button button button--form" type="submit">Оставить заявку</button>
               </form>
           </div>
         </div>
@@ -471,4 +480,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/main.js"></script>
 </html>

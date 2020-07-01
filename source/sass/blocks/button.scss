@@ -9,6 +9,8 @@
   line-height: 21px;
   background-color: $text-color;
   color: $main-color;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $grey;
