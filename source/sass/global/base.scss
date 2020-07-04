@@ -12,7 +12,7 @@ body {
   @include font-base;
   margin: 0;
   padding: 0;
-  min-width: 320px;
+  min-width: 1366px;
   background-color: $white;
   color: $main-color;
 }
@@ -24,4 +24,16 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  body {
+    min-width: 320px;
+  }
 }

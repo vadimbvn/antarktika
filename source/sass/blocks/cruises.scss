@@ -4,7 +4,7 @@
 
 .cruises h2 {
   margin: 0 auto;
-  width: 350px;
+  width: 302px;
   font-size: 28px;
   font-weight: 600;
   line-height: 42px;
@@ -14,21 +14,21 @@
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 55px;
+  justify-content: space-around;
+  margin-top: 48px;
 }
 
 .cruises__item {
-   position: relative;
-   margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .cruises__item span {
   display: block;
   position: absolute;
   margin: 0;
-  bottom: 40px;
-  left: 25px;
+  bottom: 20px;
+  left: 30px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -44,8 +44,8 @@
 .cruises__actions {
   display: none;
   position: absolute;
-  padding-top: 30px;
-  padding-left: 20px;
+  padding-top: 32px;
+  padding-left: 25px;
   width: 260px;
   height: 386px;
   top: 0;
@@ -59,7 +59,7 @@
 
 .cruises__actions h3 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -74,7 +74,7 @@
 }
 
 .cruises__actions-item {
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .cruises__actions-item h4 {
@@ -91,9 +91,13 @@
   color: $grey-text;
 }
 
+.cruises__actions__button {
+  margin-top: 13px;
+}
+
 @media (max-width: $tablet-width) {
   .cruises {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 
   .cruises h2 {
@@ -103,8 +107,12 @@
   }
 
   .cruises__list {
-    width: 730px;
-    justify-content: space-around;
+    width: 680px;
+  }
+
+  .cruises__item span {
+    bottom: 26px;
+    left: 35px;
   }
 
   .cruises__item img {
@@ -119,7 +127,7 @@
 
 @media (max-width: $mobile-width) {
   .cruises {
-    margin-top: 60px;
+    margin-top: 55px;
   }
 
   .cruises h2 {
@@ -132,10 +140,16 @@
     flex-direction: column;
     width: 270px;
     margin: 0 auto;
+    margin-top: 30px;
   }
 
   .cruises__item img {
     width: 270px;
+  }
+
+  .cruises__item span {
+    bottom: 16px;
+    left: 25px;
   }
 
   .cruises__actions {

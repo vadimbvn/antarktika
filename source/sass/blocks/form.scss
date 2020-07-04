@@ -1,7 +1,7 @@
-.form {
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+form {
+  padding-top: 45px;
+  padding-left: 49px;
+  padding-right: 49px;
   padding-bottom: 40px;
 }
 
@@ -11,8 +11,12 @@
   border: none;
 }
 
+.form br {
+  display: none;
+}
+
 .form legend {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -41,20 +45,27 @@
 
 .form__custom-checkbox {
   position: relative;
-  padding-left: 25px;
+  padding-left: 23px;
   font-size: 10px;
   line-height: 13px;
   color: $text-color;
+  cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
     width: 18px;
     height: 18px;
-    top: -3px;
+    top: -5px;
     left: 0;
     background-color: $text-color;
   }
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  webkit-appearance: none;
 }
 
 .form__checkbox:checked + .form__custom-checkbox::before {
@@ -64,19 +75,22 @@
 }
 
 .form__button {
-  margin-top: 30px;
+  margin-top: 29px;
 }
 
 @media (max-width: $mobile-width) {
-  .form {
-    padding-top: 40px;
+  form {
+    padding-top: 35px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 30px;
+  }
+
+  .form br {
+    display: block;
   }
 
   .form legend {
-    width: 215px;
+    width: 220px;
     line-height: 25px;
     text-align: center;
   }
@@ -85,11 +99,21 @@
     width: 230px;
   }
 
+  .form__custom-checkbox {
+    padding-left: 28px;
+    line-height: 12px;
+
+    &::before {
+      top: -3px;
+      left: 1px;
+    }
+  }
+
   .form__custom-checkbox span {
-    padding-left: 25px
+    padding-left: 28px;
   }
 
   .form__button {
-    margin-top: 20px;
+    margin-top: 12px;
   }
 }

@@ -1,6 +1,6 @@
 .navigation {
-  margin-top: 5px;
-  margin-left: 30px;
+  margin-top: 10px;
+  margin-left: 40px;
 }
 
 .navigation__list {
@@ -29,11 +29,12 @@
 
 @media (max-width: $tablet-width) {
   .navigation {
-    margin-top: 2px;
+    margin-top: 4px;
+    margin-left: 25px;
   }
 
   .navigation__list {
-    width: 450px;
+    width: 440px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -52,7 +53,7 @@
   }
 
   .navigation__item {
-    padding-bottom: 23px;
+    padding-bottom: 17px;
     width: 190px;
   }
 }

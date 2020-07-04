@@ -9,7 +9,7 @@
 }
 
 .travels__info {
-  margin-top: 50px;
+  margin-top: 56px;
 }
 
 .travels__info h2 {
@@ -21,9 +21,13 @@
 
 .travels__info p {
   margin: 0;
-  padding-top: 35px;
+  padding-top: 24px;
   width: 515px;
   line-height: 24px;
+}
+
+.travels__info br {
+  display: none;
 }
 
 .travels__image img {
@@ -34,12 +38,13 @@
 
 @media (max-width: $tablet-width) {
   .travels {
-    margin-top: 100px;
+    margin-top: 90px;
+    margin-bottom: 95px;
   }
 
   .travels__info {
-  margin: 0;
-}
+    margin: 0;
+  }
 
   .travels__info h2 {
     width: 210px;
@@ -48,8 +53,16 @@
   }
 
   .travels__info p {
-    padding-top: 30px;
-    width: 350px;
+    padding-top: 17px;
+    width: 320px;
+  }
+
+  .travels__info br {
+    display: block;
+  }
+
+  .travels__image {
+    padding-top: 10px;
   }
 
   .travels__image img {
@@ -60,9 +73,9 @@
 
 @media (max-width: $mobile-width) {
   .travels {
-    margin-top: 65px;
+    margin-top: 55px;
     margin-bottom: 65px;
-    padding-left: 19px;
+    padding-left: 30px;
   }
 
   .travels__wrapper {
@@ -80,11 +93,15 @@
   }
 
   .travels__image {
-    margin-top: 40px;
+    margin-top: 25px;
   }
 
   .travels__image img {
     width: 290px;
     height: 186px;
+  }
+
+  .travels__info br {
+    display: none;
   }
 }

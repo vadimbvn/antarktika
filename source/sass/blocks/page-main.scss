@@ -1,9 +1,9 @@
 .page-main__bg {
-  margin-top: -110px;
+  margin-top: -106px;
   height: 650px;
   background-image: url("../img/antartika-bg-desktop@1x.jpg");
-  background-size: 1366px 650px;
-  background-position: top center;
+  background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-color: $grey;
 
@@ -14,8 +14,8 @@
 
 .page-main__bg h1 {
   margin: 0;
-  padding-top: 280px;
-  padding-left: 70px;
+  padding-top: 270px;
+  padding-left: 96px;
   font-size: 54px;
   font-weight: 600;
   line-height: 66px;
@@ -24,18 +24,23 @@
 
 .page-main__bg p {
   margin: 0;
-  padding-top: 30px;
-  padding-left: 70px;
+  padding-top: 13px;
+  padding-left: 95px;
   font-size: 20px;
   line-height: 24px;
   color: $text-color;
 }
 
+.page-main__bg br {
+  display: none;
+}
+
 @media (max-width: $tablet-width) {
   .page-main__bg {
+    margin-top: -80px;
     height: 638px;
     background-image: url("../img/antartika-bg-tablet@1x.jpg");
-    background-size: 768px 638px;
+    background-size: cover;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/antartika-bg-tablet@2x.jpg");
@@ -43,7 +48,9 @@
   }
 
   .page-main__bg h1 {
-    padding-left: 0;
+    padding-left: 5px;
+    padding-top: 268px;
+    width: 600px;
     font-size: 50px;
     line-height: 61px;
   }
@@ -58,10 +65,9 @@
 
 @media (max-width: $mobile-width) {
   .page-main__bg {
-    margin-top: -82px;
+    margin-top: -60px;
     height: 500px;
     background-image: url("../img/antartika-bg-mobile@1x.jpg");
-    background-size: 320px 500px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/antartika-bg-mobile@2x.jpg");
@@ -70,18 +76,23 @@
 
   .page-main__bg h1 {
     margin: 0;
-    padding-top: 165px;
-    padding-left: 19px;
+    padding-top: 175px;
+    padding-left: 15px;
+    width: 290px;
     font-size: 36px;
     line-height: 45px;
   }
 
   .page-main__bg p {
     padding: 0;
-    padding-top: 25px;
-    padding-left: 19px;
+    padding-top: 12px;
+    padding-left: 15px;
     width: 220px;
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .page-main__bg br {
+    display: block;
   }
 }
