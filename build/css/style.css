@@ -674,6 +674,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 767px) {
   .page-footer {
+    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px; }
   .page-footer__wrapper {
@@ -728,9 +729,11 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .navigation {
     margin: 0 auto;
-    margin-top: 30px; }
+    margin-top: 30px;
+    margin-left: 0;
+    padding-left: 19px; }
   .navigation__list {
-    width: 290px;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1213,7 +1216,7 @@ input[type="radio"].visually-hidden {
   .cruises {
     margin-top: 55px; }
   .cruises h2 {
-    width: 320px;
+    width: 260px;
     font-size: 24px;
     line-height: 36px; }
   .cruises__list {
@@ -1556,12 +1559,10 @@ form {
     left: 0;
     background-color: #f9fbfd; }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+input[type=text],
+input[type=tel],
+input[type=email] {
+  -webkit-appearance: none; }
 
 .form__checkbox:checked + .form__custom-checkbox::before {
   background-image: url("../img/icon-yes.svg");

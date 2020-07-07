@@ -62,10 +62,10 @@ form {
   }
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-  appearance: none;
+input[type=text],
+input[type=tel],
+input[type=email] {
+  -webkit-appearance: none;
 }
 
 .form__checkbox:checked + .form__custom-checkbox::before {
