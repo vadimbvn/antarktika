@@ -1559,10 +1559,13 @@ form {
     left: 0;
     background-color: #f9fbfd; }
 
-input[type=text],
-input[type=tel],
-input[type=email] {
-  -webkit-appearance: none; }
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0; }
 
 .form__checkbox:checked + .form__custom-checkbox::before {
   background-image: url("../img/icon-yes.svg");
