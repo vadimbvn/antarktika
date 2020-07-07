@@ -544,7 +544,7 @@ input[type="radio"].visually-hidden {
             box-shadow: 0 6px 0 0 #f9fbfd, 0 13px 0 0 #f9fbfd; }
   .main-nav--open .main-nav__toggle {
     top: -37px;
-    left: 285px; }
+    right: 0; }
     .main-nav--open .main-nav__toggle::before, .main-nav--open .main-nav__toggle::after {
       content: "";
       position: absolute;
