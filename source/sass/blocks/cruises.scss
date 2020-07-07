@@ -47,7 +47,7 @@
   padding-top: 32px;
   padding-left: 25px;
   width: 260px;
-  height: 386px;
+  min-height: 386px;
   top: 0;
   left: 0;
   background-color: $main-color;
@@ -93,6 +93,7 @@
 
 .cruises__actions__button {
   margin-top: 13px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: $tablet-width) {

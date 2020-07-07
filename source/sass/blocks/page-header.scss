@@ -41,10 +41,12 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .page-header__wrapper {
+    width: 100%;
     flex-direction: column;
   }
 

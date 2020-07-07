@@ -384,7 +384,7 @@
               <p>Забронируйте тур за 3-6 месяцев <br>до даты выезда и сэкономьте до 50%</p>
             </div>
             <div class="reservation__block">
-              <form class="reservation__form form" method="post">
+              <form class="reservation__form form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="form__group">
                   <legend>Оставьте заявку <br>и мы свяжемся с вами в ближайшее время</legend>
                   <ul class="form__list">
@@ -394,7 +394,7 @@
                     </li>
                     <li>
                       <label class="visually-hidden" for="user-phone">Номер пользователя</label>
-                      <input class="form__input" type="tel" name="userphone" id="user-phone" placeholder="89236889975" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                      <input class="form__input" type="tel" name="userphone" id="user-phone" placeholder="89236889975" required="">
                     </li>
                     <li>
                       <label class="visually-hidden" for="user-mail">Email пользователя</label>
@@ -483,6 +483,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/tel.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

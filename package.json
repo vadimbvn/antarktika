@@ -4,9 +4,6 @@
   "description": "Antarktika",
   "devDependencies": {
     "browser-sync": "^2.26.7",
-    "eslint": "^7.3.1",
-    "eslint-config-htmlacademy": "^0.5.2",
-    "eslint-plugin-react": "^7.20.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-csso": "^4.0.1",
@@ -24,7 +21,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp start",
     "webp": "gulp webp"
