@@ -942,14 +942,15 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  width: 100%; }
 
 .advantages__item {
   margin-bottom: 20px;
   padding-top: 80px;
   padding-bottom: 25px;
   padding-left: 30px;
-  width: 360px;
+  width: 31%;
   background-color: #f9fbfd; }
 
 .advantages__item h3 {
@@ -969,13 +970,13 @@ input[type="radio"].visually-hidden {
   display: none; }
 
 .advantages__item--liner p {
-  width: 290px; }
+  max-width: 290px; }
 
 .advantages__item--done p {
-  width: 280px; }
+  max-width: 280px; }
 
 .advantages__item--boat p {
-  width: 240px; }
+  max-width: 240px; }
 
 .advantages__item--liner h3::before {
   content: "";
@@ -1115,6 +1116,9 @@ input[type="radio"].visually-hidden {
   margin-top: 48px; }
 
 .cruises__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-bottom: 30px; }
 

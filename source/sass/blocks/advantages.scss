@@ -27,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 .advantages__item {
@@ -34,7 +35,7 @@
   padding-top: 80px;
   padding-bottom: 25px;
   padding-left: 30px;
-  width: 360px;
+  width: 31%;
   background-color: $text-color;
 }
 
@@ -59,15 +60,15 @@
 
 
 .advantages__item--liner p {
-  width: 290px;
+  max-width: 290px;
 }
 
 .advantages__item--done p {
-  width: 280px;
+  max-width: 280px;
 }
 
 .advantages__item--boat p {
-  width: 240px;
+  max-width: 240px;
 }
 
 .advantages__item--liner h3 {
